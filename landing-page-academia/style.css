@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root{
+    --cinza: #84a07c;
+    --azul: #0090c1;
+    --amarelo: #f7e733;
+    --vinho: #7b2d26;
+    --black: #01121e;
+}
+/* fundo de tela*/
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size:  62.5%;
+    color: white;
+    font-family:'Lato', sans-serif ;
+}
+body{
+    background: linear-gradient( rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(img/img.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+/*menu, header, navBar*/
+header{
+    width: 100%;
+    height: 7vh;
+    background-color:  #f7e73346;
+}
+.menu-content{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+.logo{
+    color: var(--cinza);
+    font-size: 1.1em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.363);
+    letter-spacing: 0.5rem;
+    cursor: pointer;
+}
+.log-destac{
+    color: var(--vinho);
+}
+.list-itens{
+    display: flex;
+    gap: 10px;
+}
+nav .list-itens a{
+    color:var(--cinza);
+    padding: 5px;
+    transform: 1.5s ease-in;
+    position: relative;
+
+}nav .list-itens a:before{
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: #7b2d26;
+    transition: all 1.5s ease;
+}
+nav .list-itens a:hover:before{
+    width: 100%;
+}
+    /* conteudo principal*/
+    main{
+        height: 93vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .primary-text{
+        width: 700px;
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+    .second-text{
+        margin-bottom: 40px;
+        color: var(--cinza);
+        text-transform: uppercase;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        height: 70px;
+        
+    }
+    button{
+        width: 300px;
+        cursor: pointer;
+        border: 1px solid white;
+        text-transform: uppercase;
+        background-color: transparent;
+        color: white;
+        text-align: center;
+        border-radius: 25px;
+        position: relative;
+        transition: 1.5s;
+
+    }
+    button:before{
+        content: ' ';
+        border-radius: 25px;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        width: 0;
+        height: 70px;
+        background-color: #f7e73346 ;
+        z-index: -1;
+        transition: 1.5s;
+    }
+    button:hover:before{
+        width: 100%;
+    }
+    button:hover{
+        color: var(--black);
+        border: none;
+    }

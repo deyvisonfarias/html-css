@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=Sora:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor1:#350B0B;
+    --cor2:#072020;
+    --cor3:#25320A;
+    --cor4:#0F3A3A;
+    --cor5:#190303;
+}
+          /* font-family
+          cuprum
+          sara*/
+ header{
+   font-family:'Courier New', Courier, monospace;
+   display: inline-block;
+
+    margin: 40px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ header > h1{
+   background-image: linear-gradient(to right, var(--cor2),var(--cor4),var(--cor1));
+    font-size: 3em;
+    font-weight: bold;
+    width: 300px;
+    padding: 9px;
+    margin-top: 30px;
+    border-radius: 20px 0px 0px 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
+ }
+ header h2{
+   font-size: 2em;
+   color: white;
+   text-shadow: 1px 1px 19px rgba(0, 0, 0, 0.589);
+   margin-left: 35%;
+   background-image: linear-gradient(to right, var(--cor2),var(--cor4),var(--cor1));
+   border-radius: 10px 0px 0px 10px;
+   text-indent: 20px;
+ }
+ nav{
+   position: absolute;
+   right: 0;
+   top: 0;
+   margin-top: 20px;
+ }
+ a{
+   text-decoration: none;
+   color: white;
+   margin-right: 15px;
+   border: 3px solid var(--cor4);
+   border-radius: 5px;
+   background-color: var(--cor2);
+   padding: 10px;
+   float: right;
+   margin-bottom: 10px;
+ }
+ a:hover{
+   background-color: var(--cor4);
+   transition: 0.5s;
+ }
+
+
+ body{
+    background-color: var(--cor1)
+ }
+ form{
+   background-color: #072020;
+   margin:auto;
+   max-width: 600px;
+   height: 300px;
+   margin-top: 5%;
+   padding: 20px;
+   align-items: center;
+   border-radius: 10px;
+ }
+ form p{
+   text-align: center;
+   color: white;  
+   padding: 10px;
+ }
+ input{
+    padding: 12px;
+    width: 70%;
+    margin: 7px;
+    border-radius: 5px;
+    border: 1px solid;
+    margin-left: 12%;
+
+    
+ }
+ .bnt{
+   background-color: var(--cor1);
+   color: white;
+   border-color: var(--cor3);
+ }
