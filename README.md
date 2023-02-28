@@ -1,2 +1,2 @@
 # html-css
- Na prática
+ Estáticos
